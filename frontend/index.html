@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Nova AI
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-top">
+
+            <button
+                id="newChatBtn"
+                class="new-chat-btn"
+            >
+                + New Chat
+            </button>
+
+        </div>
+
+        <div class="history-section">
+
+            <h3>
+                History
+            </h3>
+
+            <div
+                id="historyList"
+            >
+            </div>
+
+        </div>
+
+    </aside>
+
+    <!-- Main -->
+
+    <main class="main">
+
+        <!-- Header -->
+
+        <header class="header">
+
+            <div class="logo">
+
+                <div class="logo-icon">
+                    AI
+                </div>
+
+                <div>
+
+                    <h2>
+                        Nova AI
+                    </h2>
+
+                    <p>
+                        Powered by Groq Llama 3.3
+                    </p>
+
+                </div>
+
+            </div>
+
+            <button
+                id="themeBtn"
+            >
+                🌙
+            </button>
+
+        </header>
+
+        <!-- Chat Area -->
+
+        <div
+            class="chat-box"
+            id="chatBox"
+        >
+
+            <div class="welcome">
+
+                <h1>
+                    How can I help you today?
+                </h1>
+
+                <p>
+                    Ask questions,
+                    solve coding problems,
+                    generate ideas,
+                    write content,
+                    and learn new things.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Input -->
+
+        <div class="input-wrapper">
+
+            <div class="input-area">
+
+                <button
+                    id="voiceBtn"
+                    title="Voice Input"
+                >
+                    🎤
+                </button>
+
+                <input
+                    type="text"
+                    id="userInput"
+                    placeholder="Message Nova AI..."
+                    autocomplete="off"
+                >
+
+                <button
+                    id="sendBtn"
+                    title="Send"
+                >
+                    ➤
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<!-- Markdown Support -->
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+<!-- Main Script -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
